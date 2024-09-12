@@ -6,11 +6,18 @@ import {
 } from 'fastify-type-provider-zod'
 import { createGoal } from '../functions/create-goal'
 import z from 'zod'
+import { getWeekPendingGoals } from '../functions/get-week-pending-goal'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
 app.setValidatorCompiler(validatorCompiler)
 app.setSerializerCompiler(serializerCompiler)
+
+app.get('/pending-goals', async () => {
+  const { pendingGoals } = await getWeekPendingGoals()
+
+  return { pendingGoals }
+})
 
 app.post(
   '/goals',
@@ -37,5 +44,5 @@ app
     port: 3333,
   })
   .then(() => {
-    console.log('HTTP Server running!')
+    console.log('HTTP server running!')
   })

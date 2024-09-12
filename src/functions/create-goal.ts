@@ -1,7 +1,7 @@
 import { db } from '../db'
 import { goals } from '../db/schema'
 
-interface createGoalRequest {
+interface CreateGoalRequest {
   title: string
   desiredWeeklyFrequency: number
 }
@@ -9,7 +9,7 @@ interface createGoalRequest {
 export async function createGoal({
   title,
   desiredWeeklyFrequency,
-}: createGoalRequest) {
+}: CreateGoalRequest) {
   const result = await db
     .insert(goals)
     .values({
