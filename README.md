@@ -42,13 +42,13 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas:
 
 O projeto depende de um backend que deve ser clonado e configurado separadamente. Siga os passos abaixo para configurar o backend:
 
-1. Clone o repositório do backend:
+**1.** Clone o repositório do backend:
 
 ```bash
 git clone https://github.com/devnestali/server_inorbit.git
 ```
 
-2. Escreva no seu terminal os seguintes comandos para poder criar as tabelas do banco de dados: 
+**2.** Escreva no seu terminal os seguintes comandos para poder criar as tabelas do banco de dados: 
 
 ```bash
 npx drizzle-kit generate
@@ -58,25 +58,25 @@ npx drizzle-kit generate
 npx drizzle-kit migrate
 ```
 
-3. Crie um container dentro do Docker: 
+**3.** Crie um container dentro do Docker: 
 
 ```bash
 docker compose up -d
 ```
 
-4. (Opcional) Escreva o comando abaixo no seu terminal para criar metas padronizadas:
+**4.** (Opcional) Escreva o comando abaixo no seu terminal para criar metas padronizadas:
 
 ```bash
 npm run seed
 ```
 
-5. Por fim, para rodar o Back-end escreva no seu terminal: 
+**5.** Por fim, para rodar o Back-end escreva no seu terminal: 
 
 ```bash
 npm run dev
 ```
 
-6. Se ainda não configurou o Front-end, acesse a URL abaixo e siga as intruçõesÑ 
+**6.** Se ainda não configurou o Front-end, acesse a URL abaixo e siga as intruçõesÑ 
 
 ```bash
 https://github.com/devnestali/web_inorbit
