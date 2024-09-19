@@ -40,7 +40,7 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas:
 
 ### Configurando o Backend
 
-O projeto depende de um backend que deve ser clonado e configurado separadamente. Siga os passos abaixo para configurar o backend:
+Siga os passos abaixo para configurar:
 
 **1.** Clone o repositório do backend:
 
