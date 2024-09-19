@@ -40,7 +40,7 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas:
 
 ### Configurando o Backend
 
-Siga os passos abaixo para configurar:
+- Siga os passos abaixo para configurar:
 
 **1.** Clone o repositório do backend:
 
